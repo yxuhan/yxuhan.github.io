@@ -168,9 +168,10 @@ Professional Experience
 </p>  
 </div>
 
-Academic Services
+Professional Activities
 ------
-* NeurIPS 2023
+* Conference Reviewer:
+  * NeurIPS 2023
 
 
 <!-- ############## -->
