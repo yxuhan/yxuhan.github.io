@@ -170,8 +170,7 @@ Professional Experience
 
 Professional Activities
 ------
-* Conference Reviewer:
-  * NeurIPS 2023
+* Conference Reviewer: NeurIPS, ICLR
 
 
 <!-- ############## -->
