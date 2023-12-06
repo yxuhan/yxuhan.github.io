@@ -20,8 +20,9 @@ My research interests lies at the intersection of machine learning, computer vis
 
 News
 ------
+* [2023.12] One paper on low-cost facial geometry and appearance capture is released. 
 * [2023.3] One paper accepted to CVPR'2023.
-* [2022.5] One paper accepted to SIGGRAPH'2022.
+<!-- * [2022.5] One paper accepted to SIGGRAPH'2022. -->
 <!-- * [2021.5] One paper accepted to IJCAI'2021. -->
 
 <!-- ############## -->
@@ -41,6 +42,8 @@ Education Experience
 </p>  
 </div>
 
+<br>
+
 <div>
 <img style="float: left; width: 75px" src="../hyximages/edu/BIT.jpeg">
 <img style="float: left" src="../hyximages/border_row1.png" width="10px">
@@ -57,6 +60,43 @@ Education Experience
 <!-- publications -->
 <!-- ############## -->
 
+Preprints
+------
+
+<div>
+  <img style="float: left" src="../hyximages/pub/preprint2312-CoRA.png" width="175px">
+</div>
+<div>
+  <img style="float: left" src="../hyximages/border_row1.png" width="10px">
+</div>
+<div>
+  <p style="line-height:125%">
+    <font size="4">
+      <b>High-Quality Facial Geometry and Appearance Capture at Home</b>
+      <br>
+    </font> 
+    <font size="2">
+      <b>Yuxuan Han</b>, 
+      <a href="https://storymy.github.io/">Junfeng Lyu</a>,
+      <a href="http://xufeng.site/">Feng Xu</a> 
+      <br>
+    </font> 
+    <font size="2">
+      Preprint, 2023.12
+      <br>
+    </font> 
+    <font size="2">
+      <a href="">[paper]</a> / 
+      <a href="../CoRA/index.html">[project]</a> /
+      <a href="https://github.com/yxuhan/CoRA">[code]</a>
+    </font>
+  </p>
+</div>
+
+
+<br>
+
+
 Publications
 ------
 
@@ -64,7 +104,7 @@ Publications
   <img style="float: left" src="../hyximages/pub/cvpr23-ReflectanceMM.png" width="175px">
 </div>
 <div>
-  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
+  <img style="float: left" src="../hyximages/border_row1.png" width="10px">
 </div>
 <div>
   <p style="line-height:125%">
@@ -96,7 +136,7 @@ Publications
   <img style="float: left" src="../hyximages/pub/siggraph22-AdaMPI.gif" width="175px">
 </div>
 <div>
-  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
+  <img style="float: left" src="../hyximages/border_row1.png" width="10px">
 </div>
 <div>
   <p style="line-height:125%">
@@ -128,7 +168,7 @@ Publications
   <img style="float: left" src="../hyximages/pub/ijcai21-IALS.png" width="175px">
 </div>
 <div>
-  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
+  <img style="float: left" src="../hyximages/border_row1.png" width="10px">
 </div>
 <div>
   <p style="line-height:125%">
@@ -152,6 +192,8 @@ Publications
     </font>
   </p>
 </div>
+
+<br>
 
 <!-- **** -->
 
