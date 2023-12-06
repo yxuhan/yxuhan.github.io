@@ -67,7 +67,7 @@ Preprints
   <img style="float: left" src="../hyximages/pub/preprint2312-CoRA.png" width="175px">
 </div>
 <div>
-  <img style="float: left" src="../hyximages/border_row1.png" width="10px">
+  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
 </div>
 <div>
   <p style="line-height:125%">
@@ -104,7 +104,7 @@ Publications
   <img style="float: left" src="../hyximages/pub/cvpr23-ReflectanceMM.png" width="175px">
 </div>
 <div>
-  <img style="float: left" src="../hyximages/border_row1.png" width="10px">
+  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
 </div>
 <div>
   <p style="line-height:125%">
@@ -136,7 +136,7 @@ Publications
   <img style="float: left" src="../hyximages/pub/siggraph22-AdaMPI.gif" width="175px">
 </div>
 <div>
-  <img style="float: left" src="../hyximages/border_row1.png" width="10px">
+  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
 </div>
 <div>
   <p style="line-height:125%">
@@ -168,7 +168,7 @@ Publications
   <img style="float: left" src="../hyximages/pub/ijcai21-IALS.png" width="175px">
 </div>
 <div>
-  <img style="float: left" src="../hyximages/border_row1.png" width="10px">
+  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
 </div>
 <div>
   <p style="line-height:125%">
