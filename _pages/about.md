@@ -86,7 +86,7 @@ Preprints
       <br>
     </font> 
     <font size="2">
-      <a href="">[paper]</a> / 
+      <a href="https://arxiv.org/abs/2312.03442">[paper]</a> / 
       <a href="../CoRA/index.html">[project]</a> /
       <a href="https://github.com/yxuhan/CoRA">[code]</a>
     </font>
