@@ -60,7 +60,7 @@ Education Experience
 <!-- publications -->
 <!-- ############## -->
 
-Preprints
+<!-- Preprints
 ------
 
 <div>
@@ -94,11 +94,43 @@ Preprints
 </div>
 
 
-<br>
+<br> -->
 
 
 Publications
 ------
+
+<div>
+  <img style="float: left" src="../hyximages/pub/preprint2312-CoRA.png" width="175px">
+</div>
+<div>
+  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
+</div>
+<div>
+  <p style="line-height:125%">
+    <font size="4">
+      <b>High-Quality Facial Geometry and Appearance Capture at Home</b>
+      <br>
+    </font> 
+    <font size="2">
+      <b>Yuxuan Han</b>, 
+      <a href="https://storymy.github.io/">Junfeng Lyu</a>,
+      <a href="http://xufeng.site/">Feng Xu</a> 
+      <br>
+    </font> 
+    <font size="2">
+      IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024
+      <br>
+    </font> 
+    <font size="2">
+      <a href="https://arxiv.org/abs/2312.03442">[paper]</a> / 
+      <a href="../CoRA/index.html">[project]</a> /
+      <a href="https://github.com/yxuhan/CoRA">[code]</a>
+    </font>
+  </p>
+</div>
+
+<br>
 
 <div>
   <img style="float: left" src="../hyximages/pub/cvpr23-ReflectanceMM.png" width="175px">
@@ -212,7 +244,7 @@ Professional Experience
 
 Professional Activities
 ------
-* Conference Reviewer: NeurIPS, ICLR
+* Conference Reviewer: CVPR, NeurIPS, ICLR
 
 
 <!-- ############## -->
