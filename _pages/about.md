@@ -20,7 +20,7 @@ My research interests lies at the intersection of machine learning, computer vis
 
 News
 ------
-* [2023.12] One paper on low-cost facial geometry and appearance capture is released. 
+* [2024.2] One paper accepted to CVPR'2024.
 * [2023.3] One paper accepted to CVPR'2023.
 <!-- * [2022.5] One paper accepted to SIGGRAPH'2022. -->
 <!-- * [2021.5] One paper accepted to IJCAI'2021. -->
@@ -82,7 +82,7 @@ Preprints
       <br>
     </font> 
     <font size="2">
-      Preprint, 2023.12
+      IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024
       <br>
     </font> 
     <font size="2">
