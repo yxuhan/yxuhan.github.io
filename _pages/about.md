@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a second-year Ph.D. student at [Tsinghua University](https://www.tsinghua.edu.cn/en/), under the supervision of Prof. [Feng Xu](http://xufeng.site/).
+I am currently a third-year Ph.D. student at [Tsinghua University](https://www.tsinghua.edu.cn/en/), under the supervision of Prof. [Feng Xu](http://xufeng.site/).
 Before that, I received my B.S. degree of Computer Science ([Xuteli School](https://xuteli.bit.edu.cn/english/index.htm)) from [Beijing Institute of Technology](https://english.bit.edu.cn/) at 2022, under the supervision of Prof. [Ying Fu](https://ying-fu.github.io/).
 
 My research interests lies at the intersection of machine learning, computer vision, and computer graphics, including neural rendering, visual geometric computing, and face modeling.
@@ -20,6 +20,7 @@ My research interests lies at the intersection of machine learning, computer vis
 
 News
 ------
+* [2025.5] One paper accepted to SIGGRAPH'2025 (Journal Track).
 * [2024.2] One paper accepted to CVPR'2024.
 * [2023.3] One paper accepted to CVPR'2023.
 <!-- * [2022.5] One paper accepted to SIGGRAPH'2022. -->
@@ -101,6 +102,42 @@ Publications
 ------
 
 <div>
+  <img style="float: left" src="../hyximages/pub/siggraph25-CoRA++.png" width="175px">
+</div>
+<div>
+  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
+</div>
+<div>
+  <p style="line-height:125%">
+    <font size="4">
+      <b>	Facial Appearance Capture at Home with Patch-Level Reflectance Prior</b>
+      <br>
+    </font> 
+    <font size="2">
+      <b>Yuxuan Han</b>, 
+      <a href="https://storymy.github.io/">Junfeng Lyu</a>,
+      <a href="https://orcid.org/0009-0005-8065-2475">Kuan Sheng</a>,
+      <a href="https://orcid.org/0009-0005-5490-8940">Minghao Que</a>,
+      <a href="https://scholar.google.com/citations?user=YvwsqvYAAAAJ&hl=zh-CN">Qixuan Zhang</a>,
+      <a href="http://www.xu-lan.com/">Lan Xu</a>,
+      <a href="http://xufeng.site/">Feng Xu</a> 
+      <br>
+    </font> 
+    <font size="2">
+      ACM Transactions on Graphics (Proc. of <b>SIGGRAPH</b>), 2025
+      <br>
+    </font> 
+    <font size="2">
+      <a href="">[paper]</a> / 
+      <a href="">[project]</a> /
+      <a href="">[code]</a>
+    </font>
+  </p>
+</div>
+
+<br>
+
+<div>
   <img style="float: left" src="../hyximages/pub/preprint2312-CoRA.png" width="175px">
 </div>
 <div>
@@ -119,7 +156,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024
+      Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024
       <br>
     </font> 
     <font size="2">
@@ -151,7 +188,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2023 
+      Computer Vision and Pattern Recognition (<b>CVPR</b>), 2023 
       <br>
     </font> 
     <font size="2">
@@ -183,7 +220,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      <b>ACM SIGGRAPH (Conference Track)</b>, 2022 
+      Proc. of <b>SIGGRAPH</b>, 2022 
       <br>
     </font> 
     <font size="2">
