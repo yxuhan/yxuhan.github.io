@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>DoRA</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../style/common/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/common/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/common/codemirror.min.css">
+    <link rel="stylesheet" href="../style/common/app.css">
+
+
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-20 text-center">
+                <br></br>
+                Facial Appearance Capture at Home with Patch-Level Reflectance Prior
+                <br>
+                <small>
+                    SIGGRAPH 2025 (Journal Track) <br>
+                    This webpage is still under construction ...
+                </small>
+            </h1>
+            <hr style="margin-top:0px">
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://yxuhan.github.io" style="font-size: 16px;">
+                            Yuxuan Han
+                        </a>
+                        <!-- <sup>1</sup> -->
+                    </li>
+                    <li>
+                        <a href="https://storymy.github.io/" style="font-size: 16px;">
+                            Junfeng Lyu
+                        </a>
+                        <!-- <sup>2</sup> -->
+                    </li>
+                    <li>
+                        <a href="https://orcid.org/0009-0005-8065-2475" style="font-size: 16px;">
+                            Kuan Sheng
+                        </a>
+                        <!-- <sup>2</sup> -->
+                    </li>
+                    <li>
+                        <a href="https://orcid.org/0009-0005-5490-8940" style="font-size: 16px;">
+                            Minghao Que
+                        </a>
+                        <!-- <sup>2</sup> -->
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=YvwsqvYAAAAJ&hl=zh-CN" style="font-size: 16px;">
+                            Qixuan Zhang
+                        </a>
+                        <!-- <sup>2</sup> -->
+                    </li>
+                    <li>
+                        <a href="http://www.xu-lan.com/" style="font-size: 16px;">
+                            Lan Xu
+                        </a>
+                        <!-- <sup>2</sup> -->
+                    </li>
+                    <li>
+                        <a href="http://xufeng.site/" style="font-size: 16px;">
+                            Feng Xu
+                        </a>
+                        <!-- <sup>1</sup> -->
+                    </li>
+                    <a></a><br>
+                    <li>
+                        <a href="https://www.tsinghua.edu.cn/en/" style="font-size: 16px;">
+                            Tsinghua Unviersity
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.shanghaitech.edu.cn/eng/" style="font-size: 16px;">
+                            ShanghaiTech Unviersity
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" style="font-size: 16px;">
+                            Deemos Tech
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="">
+                            <img src="./files/paper.png" height="60px">
+                            <h4><strong>Paper</strong></h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="../style/common/arxiv.png" height="60px">
+                            <h4><strong>ArXiv</strong></h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/yxuhan/DoRA">
+                            <img src="../style/common/github.png" height="60px">
+                            <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br></br>
+                <h2>
+                    Overview
+                </h2>
+                <hr style="margin-top:0px">
+                <img src="./files/framework.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify" style="font-size: 16px;">
+                    We propose a novel method for low-cost high-quality facial appearance capture. 
+                    Given a single co-located smartphone and flashlight sequence captured in a dim room as the input, our method can reconstruct high-quality facial assets, which can be exported to common graphics engines like Blender for photo-realistic rendering.
+                    As shown in the figure above, our method can faithfully reconstruct detail patterns on different facial regions like the forehead, lip, and nose.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br></br>
+                <h2>
+                    Key Idea
+                </h2>
+                <hr style="margin-top:0px">
+                <!-- <img src="./files/framework.png" class="img-responsive" alt="overview"><br> -->
+                <p class="text-justify" style="font-size: 16px;">
+                    Why low-cost facial appearance capture method like <a href="https://yxuhan.github.io/CoRA/index.html">CoRA</a> produces lower-quality results than studio-based approaches?
+                    Our answer is <b>the lack of the observation</b>:
+                    <ul>
+                        <li>
+                            <p class="text-justify" style="font-size: 16px;">
+                                The image quality of the smartphone camera is significantly inferior to that of DSLR cameras used by the studio-based method.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-justify" style="font-size: 16px;">
+                                Without polarization filters for explicit diffuse-specular separation, the inherent entanglement of these two components leads to degraded estimation of high-frequency facial details in the normal and specular albedo maps.
+                            </p>
+                        </li>
+                    </ul>
+                    <p class="text-justify" style="font-size: 16px;">
+                        Thus, we propose to <b>introduce prior on facial reflectance maps</b> to close the quality gap between low-cost and high-budget methods. Specifically, our method is a two-stage method:
+                        <ul>
+                            <li>
+                                <p class="text-justify" style="font-size: 16px;">
+                                    <b>Stage I build the prior:</b> We train a diffusion model on the high-quality facial reflectance patches cropped from Light Stage scans.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="text-justify" style="font-size: 16px;">
+                                    <b>Stage II use the prior:</b> We propose a novel patch-level diffusion posterior sampling technique to steer our patch-level diffusion prior to produce a full-resolution map that best matches the captured images. Namely, we solve the reflectance maps within the distribution modeled by our high-quality diffusion prior.
+                                </p>
+                            </li>
+                        </ul>
+                        <!-- <p class="text-justify" style="font-size: 16px;">
+                            See our video for more illustrations and results：
+                        </p> -->
+                    </p>
+                </p>
+                <!-- <hr style="margin-top:0px"> -->
+                <!-- <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/eqkTmNvlbgc" allowfullscreen=""
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0">
+                <div class="text-center">
+                    <h2>
+                        Citation
+                    </h2>
+                </div>
+                <hr style="margin-top:0px">
+                <div class="form-group col-md-12 col-md-offset-0">
+                    <div class="CodeMirror cm-s-default CodeMirror-wrap" style="font-size: 16px;">
+                        <div
+                            style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px; ">
+                            <textarea autocorrect="off" autocapitalize="off" spellcheck="false"
+                                style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;"
+                                tabindex="0"></textarea></div>
+                        <div class="CodeMirror-vscrollbar" cm-not-content="true">
+                            <div style="min-width: 1px; height: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-hscrollbar" cm-not-content="true">
+                            <div style="height: 100%; min-height: 1px; width: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-scroll" tabindex="-1">
+                            <div class="CodeMirror-sizer"
+                                style="margin-left: 0px; margin-bottom: -17px; border-right-width: 13px; min-height: 162px; padding-right: 0px; padding-bottom: 0px;">
+                                <div style="position: relative; top: 0px;">
+                                    <div class="CodeMirror-lines">
+                                        <div style="position: relative; outline: none;">
+                                            <div class="CodeMirror-measure">AخA</div>
+                                            <div class="CodeMirror-measure"></div>
+                                            <div style="position: relative; z-index: 1;"></div>
+                                            <div class="CodeMirror-cursors">
+                                                <div class="CodeMirror-cursor"
+                                                    style="left: 4px; top: 0px; height: 17.1406px;">&nbsp;</div>
+                                            </div>
+                                            <div class="CodeMirror-code" style="">
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;">@inproceedings{han2025dora,</span></pre>
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  author = {Han, Yuxuan and Lyu, Junfeng and Sheng, Kuan and Que, Minghao and Zhang, Qixuan and Xu, Lan, and Xu, Feng},</span></pre>
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  title = {Facial Appearance Capture at Home with Patch-Level Reflectance Prior},</span></pre>
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  booktitle = {SIGGRAPH},</span></pre>
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  year={2025}</span></pre>
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;">}</span></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; height: 13px; width: 1px; top: 280px;"></div>
+                            <div class="CodeMirror-gutters" style="display: none; height: 300px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br></br>
+                <h2>
+                    Acknowledgements
+                </h2>
+                <hr style="margin-top:0px">
+                <p class="text-justify" style="font-size: 16px;">
+                    The website template was adapted from <a href="https://yxuhan.github.io/AdaMPI/index.html">AdaMPI</a>.
+                </p>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

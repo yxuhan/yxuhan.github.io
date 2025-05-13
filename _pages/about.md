@@ -281,8 +281,8 @@ Professional Experience
 
 Professional Activities
 ------
-* Conference Reviewer: CVPR, NeurIPS, ICLR
-
+* Conference Reviewer: CVPR, ICCV, NeurIPS, ICLR
+* Journal Reviewer: ACM Transactions on Graphics
 
 <!-- ############## -->
 <!-- honors and awards -->
