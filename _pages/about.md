@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 I am currently a third-year Ph.D. student at [Tsinghua University](https://www.tsinghua.edu.cn/en/), under the supervision of Prof. [Feng Xu](http://xufeng.site/).
-Before that, I received my B.S. degree of Computer Science ([Xuteli School](https://xuteli.bit.edu.cn/english/index.htm)) from [Beijing Institute of Technology](https://english.bit.edu.cn/) at 2022, under the supervision of Prof. [Ying Fu](https://ying-fu.github.io/).
+Before that, I received my B.S. degree of Computer Science ([Xuteli School](https://xuteli.bit.edu.cn/english/index.htm)) from [Beijing Institute of Technology](https://english.bit.edu.cn/) at 2022, under the supervision of Prof. [Ying Fu](https://ying-fu.github.io/) and Dr. [Jiaolong Yang](https://jlyang.org/).
 
 My research interests lies at the intersection of machine learning, computer vision, and computer graphics, including neural rendering, visual geometric computing, and face modeling.
 
