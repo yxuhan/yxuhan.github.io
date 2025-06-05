@@ -128,7 +128,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      <a href="">[paper]</a> / 
+      <a href="https://arxiv.org/abs/2506.03478">[paper]</a> / 
       <a href="../DoRA/index.html">[project]</a> /
       <a href="https://github.com/yxuhan/DoRA">[code]</a>
     </font>
