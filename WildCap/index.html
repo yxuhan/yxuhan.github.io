@@ -7,7 +7,7 @@
 
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>DoRA</title>
+    <title>WildCap</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,10 +25,10 @@
         <div class="row">
             <h1 class="col-md-20 text-center">
                 <br></br>
-                Facial Appearance Capture at Home with Patch-Level Reflectance Prior
+                WildCap: Facial Appearance Capture in the Wild via Hybrid Inverse Rendering
                 <br>
                 <small>
-                    SIGGRAPH 2025 (Journal Track)
+                    arxiv
                     <!-- This webpage is still under construction ... -->
                 </small>
             </h1>
@@ -44,20 +44,20 @@
                         <!-- <sup>1</sup> -->
                     </li>
                     <li>
-                        <a href="https://storymy.github.io/" style="font-size: 16px;">
-                            Junfeng Lyu
+                        <a href="https://github.com/grignarder" style="font-size: 16px;">
+                            Xin Ming
                         </a>
                         <!-- <sup>2</sup> -->
                     </li>
                     <li>
-                        <a href="https://orcid.org/0009-0005-8065-2475" style="font-size: 16px;">
-                            Kuan Sheng
+                        <a href="https://github.com/tingyunaiai9" style="font-size: 16px;">
+                            Tianxiao Li
                         </a>
                         <!-- <sup>2</sup> -->
                     </li>
                     <li>
-                        <a href="https://orcid.org/0009-0005-5490-8940" style="font-size: 16px;">
-                            Minghao Que
+                        <a href="" style="font-size: 16px;">
+                            Zhuofan Shen
                         </a>
                         <!-- <sup>2</sup> -->
                     </li>
@@ -104,21 +104,21 @@
             <div class="col-md-4 col-md-offset-4 text-center">
                 <ul class="nav nav-pills nav-justified">
                     <li>
-                        <a href="https://arxiv.org/pdf/2506.03478">
+                        <a href="xxx">
                             <img src="./files/paper.png" height="60px">
                             <h4><strong>Paper</strong></h4>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://arxiv.org/abs/2506.03478">
+                        <a href="xxx">
                             <img src="../style/common/arxiv.png" height="60px">
                             <h4><strong>ArXiv</strong></h4>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://github.com/yxuhan/DoRA">
+                        <a href="https://github.com/yxuhan/WildCap">
                             <img src="../style/common/github.png" height="60px">
                             <h4><strong>Code</strong></h4>
                         </a>
@@ -138,58 +138,19 @@
                 <img src="./files/framework.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify" style="font-size: 16px;">
                     We propose a novel method for low-cost high-quality facial appearance capture. 
-                    Given a single co-located smartphone and flashlight sequence captured in a dim room as the input, our method can reconstruct high-quality facial assets, which can be exported to common graphics engines like Blender for photo-realistic rendering.
-                    As shown in the figure above, our method can faithfully reconstruct detail patterns on different facial regions like the forehead, lip, and nose.
+                    Given a single smartphone video captured <b>in the wild (a big improvement of our previous work <a href="https://yxuhan.github.io/CoRA/index.html">CoRA</a> and <a href="https://yxuhan.github.io/DoRA/index.html">DoRA</a>)</b>, our method can reconstruct high-quality facial assets, which can be exported to common graphics engines like Blender for photo-realistic rendering.
+                    As shown in the figure above, our method can faithfully reconstruct detail patterns on different facial regions.
+                    <em>See our video for more illustrations and results!</em> 
                 </p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12 col-md-offset-0 text-center">
-                <br></br>
-                <h2>
-                    Key Idea
-                </h2>
-                <hr style="margin-top:0px">
-                <!-- <img src="./files/framework.png" class="img-responsive" alt="overview"><br> -->
-                <p class="text-justify" style="font-size: 16px;">
-                    Why low-cost facial appearance capture method like <a href="https://yxuhan.github.io/CoRA/index.html">CoRA</a> produces lower-quality results than studio-based approaches?
-                    Our answer is <b>the lack of the observation</b>:
-                    <ul>
-                        <li>
-                            <p class="text-justify" style="font-size: 16px;">
-                                The image quality of the smartphone camera is significantly inferior to that of DSLR cameras used by the studio-based method.
-                            </p>
-                        </li>
-                        <li>
-                            <p class="text-justify" style="font-size: 16px;">
-                                Without polarization filters for explicit diffuse-specular separation, the inherent entanglement of these two components leads to degraded estimation of high-frequency facial details in the normal and specular albedo maps.
-                            </p>
-                        </li>
-                    </ul>
-                    <p class="text-justify" style="font-size: 16px;">
-                        Thus, we propose to <b>introduce prior on facial reflectance maps</b> to close the quality gap between low-cost and high-budget methods. Specifically, our method is a two-stage method:
-                        <ul>
-                            <li>
-                                <p class="text-justify" style="font-size: 16px;">
-                                    <b>Stage I build the prior:</b> We train a diffusion model on the high-quality facial reflectance patches cropped from Light Stage scans.
-                                </p>
-                            </li>
-                            <li>
-                                <p class="text-justify" style="font-size: 16px;">
-                                    <b>Stage II use the prior:</b> We propose a novel patch-level diffusion posterior sampling technique to steer our patch-level diffusion prior to produce a full-resolution map that best matches the captured images. Namely, we solve the reflectance maps within the distribution modeled by our high-quality diffusion prior.
-                                </p>
-                            </li>
-                        </ul>
-                        <p class="text-justify" style="font-size: 16px;">
-                            See our video for more illustrations and results:
-                        </p>
-                    </p>
-                </p>
                 <!-- <hr style="margin-top:0px"> -->
                 <div class="text-center">
                     <div style="position:relative;padding-top:56.25%;">
-                        <iframe src="https://player.bilibili.com/player.html?bvid=BV1Mh7nzvEUn&page=1" allowfullscreen=""
+                        <iframe src="https://www.youtube.com/watch?v=EKkHsVTUMAg" allowfullscreen=""
                             style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
                     </div>
                 </div>
@@ -242,13 +203,13 @@
                                             </div>
                                             <div class="CodeMirror-code" style="">
                                                 <pre
-                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;">@inproceedings{han2025dora,</span></pre>
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;">@inproceedings{han2025wildcap,</span></pre>
                                                 <pre
-                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  author = {Han, Yuxuan and Lyu, Junfeng and Sheng, Kuan and Que, Minghao and Zhang, Qixuan and Xu, Lan and Xu, Feng},</span></pre>
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  author = {Han, Yuxuan and Ming, Xin and Li, Tianxiao and Shen, Zhuofan and Zhang, Qixuan and Xu, Lan and Xu, Feng},</span></pre>
                                                 <pre
-                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  title = {Facial Appearance Capture at Home with Patch-Level Reflectance Prior},</span></pre>
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  title = {WildCap: Facial Appearance Capture in the Wild via Hybrid Inverse Rendering},</span></pre>
                                                 <pre
-                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  booktitle = {SIGGRAPH},</span></pre>
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  booktitle = {arxiv},</span></pre>
                                                 <pre
                                                     class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  year={2025}</span></pre>
                                                 <pre

@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a third-year Ph.D. student at [Tsinghua University](https://www.tsinghua.edu.cn/en/), under the supervision of Prof. [Feng Xu](http://xufeng.site/).
+I am currently a 4th-year Ph.D. student at [Tsinghua University](https://www.tsinghua.edu.cn/en/), under the supervision of Prof. [Feng Xu](http://xufeng.site/).
 Before that, I received my B.S. degree of Computer Science ([Xuteli School](https://xuteli.bit.edu.cn/english/index.htm)) from [Beijing Institute of Technology](https://english.bit.edu.cn/) at 2022, under the supervision of Prof. [Ying Fu](https://ying-fu.github.io/) and Dr. [Jiaolong Yang](https://jlyang.org/).
 
 My research interests lies at the intersection of machine learning, computer vision, and computer graphics, including neural rendering, visual geometric computing, and face modeling.
@@ -20,9 +20,10 @@ My research interests lies at the intersection of machine learning, computer vis
 
 News
 ------
+* [2025.11] One paper accepted to AAAI'2026 (as corresponding author).
 * [2025.5] One paper accepted to SIGGRAPH'2025 (Journal Track).
 * [2024.2] One paper accepted to CVPR'2024.
-* [2023.3] One paper accepted to CVPR'2023.
+<!-- * [2023.3] One paper accepted to CVPR'2023. -->
 <!-- * [2022.5] One paper accepted to SIGGRAPH'2022. -->
 <!-- * [2021.5] One paper accepted to IJCAI'2021. -->
 
@@ -38,7 +39,7 @@ Education Experience
 <img style="float: left" src="../hyximages/border_row1.png" width="10px">
 <p style="line-height:125%">
   <font size="4"><b>Tsinghua University, Beijing, China</b><br></font> 
-  <font size="2">September 2022 -  <br></font> 
+  <font size="2">September 2022 - June 2027 <br></font> 
   <font size="2">Ph.D. in Software Engineering at <a href="https://www.thss.tsinghua.edu.cn/en/">School of Software</a><br></font>
 </p>  
 </div>
@@ -100,6 +101,76 @@ Education Experience
 
 Publications
 ------
+(+: corresponding author)
+
+<div>
+  <img style="float: left" src="../hyximages/pub/preprint_wildcap.png" width="175px">
+</div>
+<div>
+  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
+</div>
+<div>
+  <p style="line-height:125%">
+    <font size="4">
+      <b>WildCap: Facial Appearance Capture in the Wild via Hybrid Inverse Rendering</b>
+      <br>
+    </font> 
+    <font size="2">
+      <b>Yuxuan Han</b>, 
+      <a href="https://github.com/grignarder">Xin Ming</a>,
+      <a href="https://github.com/tingyunaiai9">Tianxiao Li</a>,
+      <a href="">Zhuofan Shen</a>,
+      <a href="https://scholar.google.com/citations?user=YvwsqvYAAAAJ&hl=zh-CN">Qixuan Zhang</a>,
+      <a href="http://www.xu-lan.com/">Lan Xu</a>,
+      <a href="http://xufeng.site/">Feng Xu</a> 
+      <br>
+    </font> 
+    <font size="2">
+      arxiv, 2025.12
+      <br>
+    </font> 
+    <font size="2">
+      <a href="">[paper]</a> / 
+      <a href="../WildCap/index.html">[project]</a> /
+      <a href="https://github.com/yxuhan/WildCap">[code]</a>
+    </font>
+  </p>
+</div>
+
+<br>
+
+<div>
+  <img style="float: left" src="../hyximages/pub/aaai2026-vggtface.png" width="175px">
+</div>
+<div>
+  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
+</div>
+<div>
+  <p style="line-height:125%">
+    <font size="4">
+      <b>VGGTFace: Topologically Consistent Facial Geometry Reconstruction in the Wild</b>
+      <br>
+    </font> 
+    <font size="2">
+      <a href="https://github.com/grignarder">Xin Ming</a>,
+      <b>Yuxuan Han+</b>, 
+      <a href="https://illumiart.net/">Tianyu Huang</a>,
+      <a href="http://xufeng.site/">Feng Xu</a> 
+      <br>
+    </font> 
+    <font size="2">
+      Annual AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2026
+      <br>
+    </font> 
+    <font size="2">
+      <a href="https://arxiv.org/abs/2511.20366">[paper]</a> / 
+      <!-- <a href="../CoRA/index.html">[project]</a> / -->
+      <a href="https://github.com/grignarder/vggtface">[code]</a>
+    </font>
+  </p>
+</div>
+
+<br>
 
 <div>
   <img style="float: left" src="../hyximages/pub/siggraph25-CoRA++.png" width="175px">
@@ -110,7 +181,7 @@ Publications
 <div>
   <p style="line-height:125%">
     <font size="4">
-      <b>	Facial Appearance Capture at Home with Patch-Level Reflectance Prior</b>
+      <b>Facial Appearance Capture at Home with Patch-Level Reflectance Prior</b>
       <br>
     </font> 
     <font size="2">
@@ -281,8 +352,8 @@ Professional Experience
 
 Professional Activities
 ------
-* Conference Reviewer: CVPR, ICCV, NeurIPS, ICLR
-* Journal Reviewer: ACM Transactions on Graphics
+* Conference Reviewer: CVPR, ICCV, NeurIPS, ICLR, AAAI
+* Journal Reviewer: ACM Transactions on Graphics, TVCG
 
 <!-- ############## -->
 <!-- honors and awards -->
@@ -290,8 +361,10 @@ Professional Activities
 
 Honors & Awards
 ------
-* Xu Scholarship Nomination (the highest honor in [BIT](https://english.bit.edu.cn/), 20 candidates per year), 2021
-* National Scholarship, 2020
+* First Class Scholarship, 2025, @Tsinghua University
+* First Class Scholarship, 2023, @Tsinghua University
+* Xu Scholarship Nomination (the highest honor in [BIT](https://english.bit.edu.cn/), 20 candidates per year), 2021, @Beijing Institute of Technology
+* National Scholarship, 2020, @Beijing Institute of Technology
 
 
 <!-- ############## -->
