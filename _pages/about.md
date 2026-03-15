@@ -20,9 +20,9 @@ My research interests lies at the intersection of machine learning, computer vis
 
 News
 ------
+* [2026.3] One paper accepted to CVPR'2026.
 * [2025.11] One paper accepted to AAAI'2026 (as corresponding author).
 * [2025.5] One paper accepted to SIGGRAPH'2025 (Journal Track).
-* [2024.2] One paper accepted to CVPR'2024.
 <!-- * [2023.3] One paper accepted to CVPR'2023. -->
 <!-- * [2022.5] One paper accepted to SIGGRAPH'2022. -->
 <!-- * [2021.5] One paper accepted to IJCAI'2021. -->
@@ -112,7 +112,7 @@ Publications
 <div>
   <p style="line-height:125%">
     <font size="4">
-      <b>WildCap: Facial Appearance Capture in the Wild via Hybrid Inverse Rendering</b>
+      <b>WildCap: Facial Albedo Capture in the Wild via Hybrid Inverse Rendering</b>
       <br>
     </font> 
     <font size="2">
@@ -126,7 +126,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      arxiv, 2025.12
+      Computer Vision and Pattern Recognition (<b>CVPR</b>), 2026
       <br>
     </font> 
     <font size="2">
