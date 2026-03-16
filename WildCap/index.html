@@ -139,8 +139,50 @@
                 <p class="text-justify" style="font-size: 16px;">
                     We propose a novel method for low-cost high-quality facial appearance capture. 
                     Given a single smartphone video captured <b>in the wild (a big improvement of our previous work <a href="https://yxuhan.github.io/CoRA/index.html">CoRA</a> and <a href="https://yxuhan.github.io/DoRA/index.html">DoRA</a>)</b>, our method can reconstruct high-quality facial assets, which can be exported to common graphics engines like Blender for photo-realistic rendering.
-                    As shown in the figure above, our method can faithfully reconstruct detail patterns on different facial regions.
-                    <em>See our video for more illustrations and results!</em> 
+                    As shown in the figure above, our method can faithfully reconstruct detail patterns on different facial regions. <br>
+                    
+                    <br>
+                    My personal views on the task of "Facial Appearance Capture in the Wild" (these views are solely my own and do not represent those of my collaborators or affiliated institution):
+                    <ul>
+                        <li>
+                            <p class="text-justify" style="font-size: 16px;">
+                                <b>The main challenge:</b> I believe the biggest challenge is to disentangle shadows from the albedo in order to obtain a clean diffuse albedo map.
+                                <ul>
+                                    <li>
+                                        <p class="text-justify" style="font-size: 16px;">
+                                            Why optimization-based inverse rendering methods fail to handle shadows well: Optimization-based inverse rendering requires a strong illumination model to explain the shadows in the input image. If the shadows on a human face are cast by near-field lighting (e.g., ceiling lights), the infinitely distant environment lighting model cannot account for such shadows. However, the illumination models supported by current differentiable renderers are relatively limited.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text-justify" style="font-size: 16px;">
+                                            How to properly handle shadows: At this stage (2026), using data-driven methods for shadow removal is the most feasible approach. In the future, if optimization-based methods advance (with stronger illumination models, higher efficiency, and more stable convergence), we can also consider optimization-based methods for shadow removal.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-justify" style="font-size: 16px;">
+                                <b>The main goal:</b> In my opinion, solving for the diffuse albedo map is the core goal.
+                                <ul>
+                                    <li>
+                                        <p class="text-justify" style="font-size: 16px;">
+                                            On the one hand, with high-quality diffuse albedo, we can train a neural network to predict other reflectance maps (such as specular albedo, normal, and roughness) from the diffuse albedo. Although these predicted maps may not match the true physical properties of the human face, they still produce good rendering results, since most of the identity information is contained in the diffuse albedo.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="text-justify" style="font-size: 16px;">
+                                            On the other hand, reconstructing accurate parameters such as specular albedo and roughness requires observing specular highlights on the human face (see <a href="https://dl.acm.org/doi/10.1145/383259.383271" style="font-size: 16px;">Ravi Ramamoorthi's paper</a> for more details). However, we focus on the in-the-wild setting: user-captured data may be acquired under either low-frequency or high-frequency lighting. For low-frequency lighting, it is of course difficult to recover accurate specular and roughness parameters from the input data. For high-frequency illumination, in theory we can only estimate these parameters in regions where highlights are visible, while prediction is still required for non-highlight regions. Since highlight regions typically occupy only a small portion of the face, it is questionable how much advantage such an approach actually offers over pure prediction in terms of improving fidelity.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </p>
+                        </li>
+                    </ul>
+
+                    <p class="text-justify" style="font-size: 16px;">
+                        See our video for more illustrations and results:
+                    </p>
                 </p>
             </div>
         </div>
