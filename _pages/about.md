@@ -20,9 +20,10 @@ My research interests lies at the intersection of machine learning, computer vis
 
 News
 ------
+* [2026.4] One paper accepted to IJCV'2026.
+* [2026.4] One paper accepted to SIGGRAPH'2026 (Journal Track).
 * [2026.3] One paper accepted to CVPR'2026.
 * [2025.11] One paper accepted to AAAI'2026 (as corresponding author).
-* [2025.5] One paper accepted to SIGGRAPH'2025 (Journal Track).
 <!-- * [2023.3] One paper accepted to CVPR'2023. -->
 <!-- * [2022.5] One paper accepted to SIGGRAPH'2022. -->
 <!-- * [2021.5] One paper accepted to IJCAI'2021. -->
@@ -104,6 +105,42 @@ Publications
 (+: corresponding author)
 
 <div>
+  <img style="float: left" src="../hyximages/pub/siggraph26-opendelight.png" width="175px">
+</div>
+<div>
+  <img style="float: left" src="../hyximages/border_row2.png" width="10px">
+</div>
+<div>
+  <p style="line-height:125%">
+    <font size="4">
+      <b>Learning a Delighting Prior for Facial Appearance Capture in the Wild</b>
+      <br>
+    </font> 
+    <font size="2">
+      <b>Yuxuan Han</b>, 
+      <a href="https://github.com/grignarder">Xin Ming</a>,
+      <a href="https://github.com/tingyunaiai9">Tianxiao Li</a>,
+      <a href="">Zhuofan Shen</a>,
+      <a href="https://scholar.google.com/citations?user=YvwsqvYAAAAJ&hl=zh-CN">Qixuan Zhang</a>,
+      <a href="http://www.xu-lan.com/">Lan Xu</a>,
+      <a href="http://xufeng.site/">Feng Xu</a> 
+      <br>
+    </font> 
+    <font size="2">
+      ACM Transactions on Graphics (Proc. of SIGGRAPH) 2026
+      <br>
+    </font> 
+    <font size="2">
+      <a href="">[paper]</a> / 
+      <a href="../OpenDelight/index.html">[project]</a> /
+      <a href="https://github.com/yxuhan/OpenDelight">[code]</a>
+    </font>
+  </p>
+</div>
+
+<br>
+
+<div>
   <img style="float: left" src="../hyximages/pub/preprint_wildcap.png" width="175px">
 </div>
 <div>
@@ -126,7 +163,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      Computer Vision and Pattern Recognition (<b>CVPR</b>), 2026
+      CVPR 2026
       <br>
     </font> 
     <font size="2">
@@ -159,7 +196,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      Annual AAAI Conference on Artificial Intelligence (<b>AAAI</b>), 2026
+      AAAI 2026
       <br>
     </font> 
     <font size="2">
@@ -195,7 +232,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      ACM Transactions on Graphics (Proc. of <b>SIGGRAPH</b>), 2025
+      ACM Transactions on Graphics (Proc. of SIGGRAPH) 2025
       <br>
     </font> 
     <font size="2">
@@ -227,7 +264,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024
+      CVPR 2024 and IJCV 2026
       <br>
     </font> 
     <font size="2">
@@ -259,7 +296,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      Computer Vision and Pattern Recognition (<b>CVPR</b>), 2023 
+      CVPR 2023 
       <br>
     </font> 
     <font size="2">
@@ -291,7 +328,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      Proc. of <b>SIGGRAPH</b>, 2022 
+      SIGGRAPH 2022 
       <br>
     </font> 
     <font size="2">
@@ -323,7 +360,7 @@ Publications
       <br>
     </font> 
     <font size="2">
-      International Joint Conference on Artificial Intelligence (<b>IJCAI</b>), 2021 
+      IJCAI 2021 
       <br>
     </font> 
     <font size="2">
@@ -361,10 +398,10 @@ Professional Activities
 
 Honors & Awards
 ------
-* First Class Scholarship, 2025, @Tsinghua University
-* First Class Scholarship, 2023, @Tsinghua University
-* Xu Scholarship Nomination (the highest honor in [BIT](https://english.bit.edu.cn/), 20 candidates per year), 2021, @Beijing Institute of Technology
-* National Scholarship, 2020, @Beijing Institute of Technology
+* [China3DV Academic Rising Star](https://mp.weixin.qq.com/s/QEFHJNH7X_zx_g9e0R-G_w) (6 candidates per year), 2026
+* [Meshy Fellowship Finalists](https://www.meshy.ai/blog/fellowship-2026) (20 candidates per year), 2026
+* Xu Scholarship Nomination (the highest honor in [BIT](https://english.bit.edu.cn/), 20 candidates per year), 2021
+* National Scholarship, 2020
 
 
 <!-- ############## -->

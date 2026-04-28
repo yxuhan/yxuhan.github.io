@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>OpenDelight</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../style/common/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/common/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/common/codemirror.min.css">
+    <link rel="stylesheet" href="../style/common/app.css">
+
+
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-20 text-center">
+                <br></br>
+                Learning a Delighting Prior for Facial Appearance Capture in the Wild
+                <br>
+                <small>
+                    SIGGRAPH 2026 (Journal Track)
+                    <!-- This webpage is still under construction ... -->
+                </small>
+            </h1>
+            <hr style="margin-top:0px">
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://yxuhan.github.io" style="font-size: 16px;">
+                            Yuxuan Han
+                        </a>
+                        <!-- <sup>1</sup> -->
+                    </li>
+                    <li>
+                        <a href="https://github.com/grignarder" style="font-size: 16px;">
+                            Xin Ming
+                        </a>
+                        <!-- <sup>2</sup> -->
+                    </li>
+                    <li>
+                        <a href="https://github.com/tingyunaiai9" style="font-size: 16px;">
+                            Tianxiao Li
+                        </a>
+                        <!-- <sup>2</sup> -->
+                    </li>
+                    <li>
+                        <a href="" style="font-size: 16px;">
+                            Zhuofan Shen
+                        </a>
+                        <!-- <sup>2</sup> -->
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=YvwsqvYAAAAJ&hl=zh-CN" style="font-size: 16px;">
+                            Qixuan Zhang
+                        </a>
+                        <!-- <sup>2</sup> -->
+                    </li>
+                    <li>
+                        <a href="http://www.xu-lan.com/" style="font-size: 16px;">
+                            Lan Xu
+                        </a>
+                        <!-- <sup>2</sup> -->
+                    </li>
+                    <li>
+                        <a href="http://xufeng.site/" style="font-size: 16px;">
+                            Feng Xu
+                        </a>
+                        <!-- <sup>1</sup> -->
+                    </li>
+                    <a></a><br>
+                    <li>
+                        <a href="https://www.tsinghua.edu.cn/en/" style="font-size: 16px;">
+                            Tsinghua Unviersity
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.shanghaitech.edu.cn/eng/" style="font-size: 16px;">
+                            ShanghaiTech Unviersity
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" style="font-size: 16px;">
+                            Deemos Tech
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="">
+                            <img src="./files/paper.png" height="60px">
+                            <h4><strong>Paper</strong></h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <img src="../style/common/arxiv.png" height="60px">
+                            <h4><strong>ArXiv</strong></h4>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/yxuhan/OpenDelight">
+                            <img src="../style/common/github.png" height="60px">
+                            <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br></br>
+                <h2>
+                    Overview
+                </h2>
+                <hr style="margin-top:0px">
+                <p class="text-justify" style="font-size: 16px;">
+                    <p class="text-justify" style="font-size: 16px;">
+                        High-quality facial appearance capture has traditionally required costly studio recording. 
+                        <!-- (e.g., [FLARE](https://github.com/sbharadwajj/flare), [NextFace](https://github.com/abdallahdib/NextFace), and [Xu et al.](https://arxiv.org/abs/2412.12765) -->
+                        Recent works consider an in-the-wild smartphone-based setup (e.g., <a href="https://github.com/sbharadwajj/flare" style="font-size: 16px;">FLARE</a>, <a href="https://github.com/abdallahdib/NextFace" style="font-size: 16px;">NextFace</a>, and <a href="https://arxiv.org/abs/2412.12765" style="font-size: 16px;">Xu et al.</a>); however, their model-based inverse rendering paradigm struggles with the complex disentanglement of reflectance from unknown illumination (especially on removing cast shadows). 
+                        <b>To bridge this gap, we propose to shift the paradigm into training a powerful delighting network as a prior to constrain the optimization.</b>
+                    </p>
+                </p>
+                <img src="./files/framework.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify" style="font-size: 16px;">
+                    <p class="text-justify" style="font-size: 16px;">
+                        As shown in the framework figure above, we leverage the OLAT dataset and the rendered Light Stage scans for training, and propose Dataset Latent Modulation (DLM) to seamlessly integrate these heterogeneous data sources.
+                        Specifically, by conditioning the core network on learnable source-aware tokens, we decouple dataset-specific styles from physical delighting principles, enabling the emergence of a delighting prior that outperforms existing proprietary models.
+                    </p>
+
+                    <p class="text-justify" style="font-size: 16px;">
+                        Compared to the best proprietary model, <a href="https://beeble.ai/" style="font-size: 16px;">SwitchLight</a>, our method demonstrates better delighting results with significantly fewer baking lighting effects, as shown in the figure below.
+                        <b>More importantly, all the code, pretrained weight, and dataset of our method is open-sourced.</b>
+                    </p>
+                </p>
+                
+                <img src="./files/res.png" class="img-responsive" alt="overview"><br>
+                
+                <p class="text-justify" style="font-size: 16px;"></p>
+                    <p class="text-justify" style="font-size: 16px;">
+                        This powerful delighting prior enables a simple and automatic appearance capture pipeline that achieves high-quality reflectance estimation from casual video inputs.
+                        Compared to our previous work <a href="https://yxuhan.github.io/WildCap/index.html" style="font-size: 16px;">WildCap</a>, our new method not only eliminates the need for manual intervention to correct network artifacts but also removes its complex and specialized inverse rendering process, while achieving on par or better quality, <b>demonstrating that a superior delighting prior can fundamentally simplify the appearance capture problem</b>. See our video for more results:
+                    </p>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <!-- <hr style="margin-top:0px"> -->
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/cfHw-IWA35c" allowfullscreen=""
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+                <!-- <div class="video-container">
+                     <div style="position:relative;padding-top:56.25%;"></div>
+                        <iframe class="bilibili-player" 
+                                src="https://player.bilibili.com/player.html?bvid=BV1mg4y1o7SS&page=1" 
+                                allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        </iframe>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0">
+                <div class="text-center">
+                    <h2>
+                        Citation
+                    </h2>
+                </div>
+                <hr style="margin-top:0px">
+                <div class="form-group col-md-12 col-md-offset-0">
+                    <div class="CodeMirror cm-s-default CodeMirror-wrap" style="font-size: 16px;">
+                        <div
+                            style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px; ">
+                            <textarea autocorrect="off" autocapitalize="off" spellcheck="false"
+                                style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;"
+                                tabindex="0"></textarea></div>
+                        <div class="CodeMirror-vscrollbar" cm-not-content="true">
+                            <div style="min-width: 1px; height: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-hscrollbar" cm-not-content="true">
+                            <div style="height: 100%; min-height: 1px; width: 0px;"></div>
+                        </div>
+                        <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+                        <div class="CodeMirror-scroll" tabindex="-1">
+                            <div class="CodeMirror-sizer"
+                                style="margin-left: 0px; margin-bottom: -17px; border-right-width: 13px; min-height: 162px; padding-right: 0px; padding-bottom: 0px;">
+                                <div style="position: relative; top: 0px;">
+                                    <div class="CodeMirror-lines">
+                                        <div style="position: relative; outline: none;">
+                                            <div class="CodeMirror-measure">AخA</div>
+                                            <div class="CodeMirror-measure"></div>
+                                            <div style="position: relative; z-index: 1;"></div>
+                                            <div class="CodeMirror-cursors">
+                                                <div class="CodeMirror-cursor"
+                                                    style="left: 4px; top: 0px; height: 17.1406px;">&nbsp;</div>
+                                            </div>
+                                            <div class="CodeMirror-code" style="">
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;">@inproceedings{han2026opendelight,</span></pre>
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  author = {Han, Yuxuan and Ming, Xin and Li, Tianxiao and Shen, Zhuofan and Zhang, Qixuan and Xu, Lan and Xu, Feng},</span></pre>
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  title = {Learning a Delighting Prior for Facial Appearance Capture in the Wild},</span></pre>
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  booktitle = {SIGGRAPH},</span></pre>
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  year={2026}</span></pre>
+                                                <pre
+                                                    class=" CodeMirror-line "><span style="padding-right: 0.1px;">}</span></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; height: 13px; width: 1px; top: 280px;"></div>
+                            <div class="CodeMirror-gutters" style="display: none; height: 300px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-md-offset-0 text-center">
+                <br></br>
+                <h2>
+                    Acknowledgements
+                </h2>
+                <hr style="margin-top:0px">
+                <p class="text-justify" style="font-size: 16px;">
+                    The website template was adapted from <a href="https://yxuhan.github.io/AdaMPI/index.html">AdaMPI</a>.
+                </p>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
