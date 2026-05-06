@@ -264,11 +264,12 @@ Publications
       <br>
     </font> 
     <font size="2">
-      CVPR 2024 and IJCV 2026
+      CVPR 2024 & IJCV 2026
       <br>
     </font> 
     <font size="2">
       <a href="https://arxiv.org/abs/2312.03442">[paper]</a> / 
+      <a href="https://link.springer.com/article/10.1007/s11263-026-02847-7">[paper (IJCV)]</a> / 
       <a href="../CoRA/index.html">[project]</a> /
       <a href="https://github.com/yxuhan/CoRA">[code]</a>
     </font>
